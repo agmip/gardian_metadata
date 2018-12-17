@@ -1,0 +1,64 @@
+[
+  {
+    "data": "GPS Coordinate Latitude",
+    "term": "http://purl.obolibrary.org/obo/OBI_0001620",
+    "unit": "http://purl.obolibrary.org/obo/UO_0000185"
+  },
+  {
+    "data": "GPS Coordinate Longitude",
+    "term": "http://purl.obolibrary.org/obo/OBI_0001621",
+    "unit": "http://purl.obolibrary.org/obo/UO_0000185"
+  },
+  {
+    "data": "GPS Coordinate Altitude",
+    "term:": "http://semanticscience.org/resource/SIO_000438",
+    "unit": "http://purl.obolibrary.org/obo/UO_0000008"
+  },
+  {
+    "data": "Maize variety name = MVnam",
+    "term": "http://www.ebi.ac.uk/efo/EFO_0005136"
+  },
+  {
+    "data": "Planting date = PLNdat",
+    "term": "http://purl.obolibrary.org/obo/AGRO_00000231",
+    "unit": "http://purl.obolibrary.org/obo/AGRO_00000417"
+  },
+  {
+    "data": "Replicate = EXPrep",
+    "term": "http://purl.obolibrary.org/obo/OBI_0200057"
+  },
+  {
+    "data": "Harvest_date = HDATE",
+    "term": "http://purl.obolibrary.org/obo/AGRO_00000025",
+    "unit": "http://purl.obolibrary.org/obo/AGRO_00000417"
+  },
+  {
+    "data": "Grain yield /ha (kg)",
+    "term": "http://purl.obolibrary.org/obo/TO_0000371",
+    "unit": "http://purl.obolibrary.org/obo/UO_0000283"
+  },
+  {
+    "data": "Site no. =EXPsit",
+    "term": "http://purl.obolibrary.org/obo/NCIT_C90472"
+  },
+  {
+    "data": "Plot size (sq. m)",
+    "term": "http://purl.obolibrary.org/obo/AGRO_00000302",
+    "unit": "http://purl.obolibrary.org/obo/UO_0000080"
+  },
+  {
+    "data": "Harvest index (%)",
+    "term": "http://purl.obolibrary.org/obo/TO_0000128",
+    "unit": "http://purl.obolibrary.org/obo/UO_0000187"
+  },
+  {
+    "data": "Tasseling_silking_date=flowering_date = FLWdat",
+    "term": "http://purl.obolibrary.org/obo/PO_0007016",
+    "unit": "http://purl.obolibrary.org/obo/AGRO_00000417"
+  },
+  {
+    "data": "Pysioligic_ maturity_dat = MDAT/date",
+    "term": "http://purl.obolibrary.org/obo/FLOPO_0004906",
+    "unit": "http://purl.obolibrary.org/obo/AGRO_00000417"
+  }
+]

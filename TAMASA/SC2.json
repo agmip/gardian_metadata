@@ -1,0 +1,128 @@
+{
+  "info": {
+    "datatype": "excel",
+    "default_sheet": "Corrected Data",
+    "translator_email": "cvillalobos@ufl.edu",
+    "source": "https://data.cimmyt.org/dataset.xhtml?persistentId=hdl:11529/11011",
+    "file": "TAMASA_ET_VT_2016F.xlsx"
+  },
+  "common_methods": [
+    {
+      "name": "protocol_extractor",
+      "type": "regex",
+      "cell": {
+        "sheet": "Protocol",
+        "column_index": 3,
+        "row_index": 7
+      },
+      "match": "[0-9.]+"
+    }
+  ],
+  "translation_map": [
+    {
+      "icasa": "crid",
+      "provider": "user",
+      "fixed_value": "MAZ"
+    },
+    {
+      "icasa": "fl_lat",
+      "provider": "data",
+      "column": "GPS Coordinate Latitude",
+      "unit": "UO_0000185",
+      "fill": "--with-previous--"
+    },
+    {
+      "icasa": "fl_long",
+      "provider": "data",
+      "column": "GPS Coordinate Longitude",
+      "unit": "UO_0000185",
+      "fill": "--with-previous--"
+    },
+    {
+      "icasa": "flele",
+      "provider": "data",
+      "column": "GPS Coordinate Altitude",
+      "unit": "UO_0000008",
+      "fill": "--with-previous--"
+    },
+    {
+      "icasa": "pdate",
+      "provider": "data",
+      "column": "Planting date = PLNdat",
+      "unit": "AGRO_0000417",
+      "format": "excel"
+    },
+    {
+      "icasa": "hdate",
+      "provider": "data",
+      "column": "Harvest_date = HDATE",
+      "unit": "AGRO_0000417",
+      "format": "excel"
+    },
+    {
+      "icasa": "hwam",
+      "provider": "data",
+      "column": "Grain yield /ha (kg)",
+      "unit": "UO_0000283"
+    },
+    {
+      "icasa": "plrs",
+      "provider": "method",
+      "method": "protocol_extractor:2",
+      "unit": "UO_0000008"
+    },
+    {
+      "icasa": "plsp",
+      "provider": "data",
+      "method": "protocol_extractor:3",
+      "unit": "UO_0000008"
+    },
+    {
+      "icasa": "plpop",
+      "provider": "calculated",
+      "formula": "10^4/(plrs * plsp)",
+      "unit": "--NA: Count per square meter--"
+    },
+    {
+      "icasa": "exname",
+      "provider": "method",
+      "method": {
+        "type": "concat",
+        "column": [
+          "Site no. = EXPsit"
+        ],
+        "join": "{1}{#}"
+      }
+    },
+    {
+      "provider": "data",
+      "column": "Maize variety name = MVnam",
+      "icasa": "cul_name"
+    },
+    {
+      "icasa": "rp",
+      "provider": "data",
+      "column": "Replicate = EXPrep"
+    },
+    {
+      "icasa": "adat",
+      "provider": "data",
+      "column": "Tasseling_silking_date=flowering_date = FLWdat",
+      "unit": "UO_0000417",
+      "format": "excel"
+    },
+    {
+      "icasa": "mdat",
+      "provider": "data",
+      "column": "Pysioligic_ maturity_dat = MDAT/date",
+      "unit": "http://purl.obolibrary.org/obo/AGRO_00000417",
+      "format": "excel"
+    },
+    {
+      "icasa": "hiad",
+      "provider": "data",
+      "column": "Harvest index (%)",
+      "unit": "http://purl.obolibrary.org/obo/UO_0000187"
+    }
+  ]
+}
