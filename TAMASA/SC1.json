@@ -11,7 +11,7 @@
   },
   {
     "data": "GPS Coordinate Altitude",
-    "term:": "http://semanticscience.org/resource/SIO_000438",
+    "term:": "http://purl.obolibrary.org/obo/PATO_0001687",
     "unit": "http://purl.obolibrary.org/obo/UO_0000008"
   },
   {

@@ -1,0 +1,56 @@
+{
+  "info": {
+    "datatype": "excel",
+    "translator_email": "cvillalobos@ufl.edu",
+    "source": "http://dataverse.icrisat.org/dataset.xhtml?persistentId=doi:10.21421/D2/IVTYAR",
+    "files": [
+      "05. IBYAN_Location.csv",
+      "06. IBYAN_Soils.csv",
+      "07. IBYAN_Data.csv"
+    ]
+  },
+  "common_methods": [],
+  "translation_map": [
+    {
+      "icasa": "crid",
+      "provider": "user",
+      "fixed_value": "SGG"
+    },
+    {
+      "icasa": "fl_lat",
+      "provider": "data",
+      "file": "05. IBYAN_Location.csv",
+      "column": "LONGITUD",
+      "unit": "--SPANISH DMS--"
+    },
+    {
+      "icasa": "fL_long",
+      "provider": "data",
+      "file": "05. IBYAN_Location.csv",
+      "column": "LATITUD",
+      "unit": "--SPANISH DMS--"
+    },
+    {
+      "icasa": "pdate",
+      "provider": "data",
+      "file": "06. IBYAN_Soils.csv",
+      "column": "FECHA_SIEMBRA",
+      "unit": "NCIT_C25164",
+      "format": "iso8601"
+    },
+    {
+      "icasa": "hdate",
+      "provider": "data",
+      "file": "07. IBYAN_Data.csv",
+      "column": "DAM",
+      "transform": "date_offset(pdate, $_)"
+    },
+    {
+      "icasa": "hwam",
+      "provider": "data",
+      "file": "07. IBYAN_Data.csv",
+      "column": "RENDIMIENTO",
+      "unit": "UO_0000283"
+    }
+  ]
+}

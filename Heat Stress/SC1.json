@@ -1,0 +1,31 @@
+[
+  {
+    "data": "fl_lat",
+    "term": "http://purl.obolibrary.org/obo/OBI_0001620",
+    "unit": "http://purl.obolibrary.org/obo/UO_0000185"
+  },
+  {
+    "data": "fl_long",
+    "term": "http://purl.obolibrary.org/obo/OBI_0001621",
+    "unit": "http://purl.obolibrary.org/obo/UO_0000185"
+  },
+  {
+    "data": "Wheat Code",
+    "term": "http://purl.obolibrary.org/obo/AGRO_00000325"
+  },
+  {
+    "data": "Planting.date",
+    "term": "http://purl.obolibrary.org/obo/AGRO_00000231",
+    "unit": "http://purl.obolibrary.org/obo/NCIT_C25164"
+  },
+  {
+    "data": "Mat.date",
+    "term": "http://purl.obolibrary.org/obo/AGRO_00000025",
+    "unit": "http://purl.obolibrary.org/obo/NCIT_C25164"
+  },
+  {
+    "data": "Yield",
+    "term": "http://purl.obolibrary.org/obo/TO_0000371",
+    "unit": "http://purl.obolibrary.org/obo/UO_0000323"
+  }
+]

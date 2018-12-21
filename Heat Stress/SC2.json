@@ -1,0 +1,83 @@
+{
+  "info": {
+    "translator_email": "cvillalobos@ufl.edu",
+    "source": "https://data.cimmyt.org/dataset.xhtml?persistentId=hdl:11529/10548058",
+    "files": [
+      {
+        "file": "ISGHE_AgMIP_site_soil_crop_management.xml",
+        "datatype": "excel/xml",
+        "column_header_spec": {
+          "Field-mgmt": {
+            "blocks": [
+              {
+                "row": 20,
+                "data": [
+                  21,
+                  48
+                ]
+              },
+              {
+                "row": 83,
+                "data": [
+                  84,
+                  111
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "file": "ISGHE_AgMIP_measurments_ave_sd.txt",
+        "datatype": "tab"
+      }
+    ]
+  },
+  "common_methods": [],
+  "translation_map": [
+    {
+      "icasa": "crid",
+      "provider": "user",
+      "column": "WHB"
+    },
+    {
+      "icasa": "fl_lat",
+      "file": "ISGHE_AgMIP_site_soil_crop_management.xml",
+      "sheet": "Field-mgmt",
+      "provider": "data",
+      "column": "fl_lat",
+      "unit": "UO_0000185"
+    },
+    {
+      "icasa": "fL_long",
+      "file": "ISGHE_AgMIP_site_soil_crop_management.xml",
+      "sheet": "Field-mgmt",
+      "provider": "data",
+      "column": "fl_long",
+      "unit": "UO_0000185"
+    },
+    {
+      "icasa": "pdate",
+      "file": "ISGHE_AgMIP_measurments_ave_sd.txt",
+      "provider": "data",
+      "column": "Planting.date",
+      "unit": "NCIT_C25164",
+      "format": "iso8601"
+    },
+    {
+      "icasa": "mdat",
+      "file": "ISGHE_AgMIP_measurments_ave_sd.txt",
+      "provider": "data",
+      "column": "Mat.date",
+      "unit": "NCIT_C25164",
+      "format": "iso8601"
+    },
+    {
+      "icasa": "hwam",
+      "file": "ISGHE_AgMIP_measurments_ave_sd.txt",
+      "provider": "data",
+      "column": "Yield",
+      "unit": "UO_00000323"
+    }
+  ]
+}

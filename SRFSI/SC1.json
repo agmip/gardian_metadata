@@ -1,0 +1,27 @@
+[
+  {
+    "data": "Latitude North (Degree and decimal format only)",
+    "term": "http://purl.obolibrary.org/obo/OBI_0001620",
+    "unit": "http://purl.obolibrary.org/obo/UO_0000185"
+  },
+  {
+    "data": "Longitude North (Degree and decimal format only)",
+    "term": "http://purl.obolibrary.org/obo/OBI_0001621",
+    "unit": "http://purl.obolibrary.org/obo/UO_0000185"
+  },
+  {
+    "data": "Date of seeding (dd-mm-yy)",
+    "term": "http://purl.obolibrary.org/obo/AGRO_00000231",
+    "unit": "http://purl.obolibrary.org/obo/NCIT_C25164"
+  },
+  {
+    "data": "Datw of harvest (dd-mm-yy)",
+    "term": "http://purl.obolibrary.org/obo/AGRO_00000025",
+    "unit": "http://purl.obolibrary.org/obo/NCIT_C25164"
+  },
+  {
+    "data": "Grain yield (t/ha)",
+    "term": "http://purl.obolibrary.org/obo/TO_0000371",
+    "unit": "http://purl.obolibrary.org/obo/UO_0000323"
+  }
+]

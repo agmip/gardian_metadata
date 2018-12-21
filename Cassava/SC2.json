@@ -1,0 +1,63 @@
+{
+  "info": {
+    "datatype": [
+      "excel",
+      "csv"
+    ],
+    "translator_email": "cvillalobos@ufl.edu",
+    "source": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/30PHOU",
+    "files": [
+      "4.01.All-Type-Trials_Locations.xslx",
+      "4.02.All-Type-Trials_Data.csv"
+    ]
+  },
+  "common_methods": [],
+  "translation_map": [
+    {
+      "icasa": "crid",
+      "provider": "user",
+      "fixed_value": "CSV"
+    },
+    {
+      "icasa": "fl_lat",
+      "file": "4.01.All-Type-Trials_Locations.xslx",
+      "sheet": "Data",
+      "provider": "data",
+      "column": "LATITUDE",
+      "unit": "--DMS--"
+    },
+    {
+      "file": "4.01.All-Type-Trials_Locations.xslx",
+      "sheet": "Data",
+      "provider": "data",
+      "column": "LONGITUD",
+      "unit": "--DMS--",
+      "icasa": "fL_long"
+    },
+    {
+      "icasa": "pdate",
+      "file": "4.01.All-Type-Trials_Locations.xslx",
+      "sheet": "Data",
+      "provider": "data",
+      "column": "PLANT_DATE",
+      "unit": "NCIT_C25164",
+      "format": "excel"
+    },
+    {
+      "icasa": "hdate",
+      "file": "4.01.All-Type-Trials_Locations.xslx",
+      "sheet": "Data",
+      "provider": "data",
+      "column": "HARVEST_DATE",
+      "unit": "NCIT_C25164",
+      "format": "excel"
+    },
+    {
+      "icasa": "hwah",
+      "file": "4.02.All-Type-Trials_Data.csv",
+      "provider": "data",
+      "column": "YIELDH",
+      "transform": "multiply($DMATTE, .01);multiply($_,$dmatte)"
+    }
+  ]
+}

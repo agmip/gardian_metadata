@@ -1,0 +1,27 @@
+[
+  {
+    "data": "Latitude",
+    "term": "http://purl.obolibrary.org/obo/OBI_0001620",
+    "unit": "http://purl.obolibrary.org/obo/UO_0000185"
+  },
+  {
+    "data": "Longitude",
+    "term": "http://purl.obolibrary.org/obo/OBI_0001621",
+    "unit": "http://purl.obolibrary.org/obo/UO_0000185"
+  },
+  {
+    "data": "Sowing date",
+    "term": "http://purl.obolibrary.org/obo/AGRO_00000231",
+    "unit": "http://purl.obolibrary.org/obo/AGRO_00000417"
+  },
+  {
+    "data": "Maturity date",
+    "term": "http://purl.obolibrary.org/obo/AGRO_00000025",
+    "unit": "http://purl.obolibrary.org/obo/AGRO_00000417"
+  },
+  {
+    "data": "Total crop grain_wt (Kg/ha)",
+    "term": "http://purl.obolibrary.org/obo/TO_0000371",
+    "unit": "http://purl.obolibrary.org/obo/UO_0000191"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "data": "LATITUDE",
+    "term": "http://purl.obolibrary.org/obo/OBI_0001620",
+    "unit": "http://purl.obolibrary.org/obo/UO_0000185"
+  },
+  {
+    "data": "LONGITUD",
+    "term": "http://purl.obolibrary.org/obo/OBI_0001621",
+    "unit": "http://purl.obolibrary.org/obo/UO_0000185"
+  },
+  {
+    "data": "PLANT_DATE",
+    "term": "http://purl.obolibrary.org/obo/AGRO_00000231",
+    "unit": "http://purl.obolibrary.org/obo/NCIT_C25164"
+  },
+  {
+    "data": "HARVEST_DATE",
+    "term": "http://purl.obolibrary.org/obo/AGRO_00000025",
+    "unit": "http://purl.obolibrary.org/obo/NCIT_C25164"
+  },
+  {
+    "data": "YIELDH",
+    "term": "http://purl.obolibrary.org/obo/TO_0000371",
+    "unit": "http://purl.obolibrary.org/obo/UO_0000323"
+  }
+]

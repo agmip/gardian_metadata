@@ -1,0 +1,71 @@
+{
+  "info": {
+    "datatype": "excel",
+    "translator_email": "cvillalobos@ufl.edu",
+    "source": "http://dataverse.icrisat.org/dataset.xhtml?persistentId=doi:10.21421/D2/IVTYAR",
+    "file": "Rabi Sorghum 2015 - Complete Dataset.xls",
+    "column_header_spec": {
+      "1.growth & development": {
+        "method": "merge",
+        "seperator": " ",
+        "rows": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "2.experiment table": {
+        "method": "merge",
+        "seperator": " ",
+        "rows": [
+          13,
+          14,
+          15
+        ]
+      }
+    }
+  },
+  "common_methods": [],
+  "translation_map": [
+    {
+      "icasa": "crid",
+      "provider": "user",
+      "fixed_value": "SGG"
+    },
+    {
+      "icasa": "fl_lat",
+      "provider": "user",
+      "fixed_value": "17.383"
+    },
+    {
+      "icasa": "fL_long",
+      "provider": "user",
+      "fixed_value": "-78.4867"
+    },
+    {
+      "icasa": "pdate",
+      "sheet": "2.experiment table",
+      "provider": "data",
+      "column": "Sowing date",
+      "unit": "NCIT_C25164",
+      "format": "excel"
+    },
+    {
+      "icasa": "hdate",
+      "sheet": "2.experiment table",
+      "provider": "data",
+      "column": "Maturity date",
+      "unit": "NCIT_C25164",
+      "format": "excel"
+    },
+    {
+      "icasa": "hwam",
+      "sheet": "1.growth & development",
+      "provider": "data",
+      "column": "Total crop grain_wt (kg/ha)",
+      "unit": "UO_0000283"
+    }
+  ]
+}

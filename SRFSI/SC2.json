@@ -1,0 +1,80 @@
+{
+  "info": {
+    "datatype": "excel",
+    "translator_email": "cvillalobos@ufl.edu",
+    "source": "https://data.cimmyt.org/dataset.xhtml?persistentId=hdl:11529/10548058",
+    "file": "1-Kharif rice 2015-Weed management module-Rangpur.xlsx",
+    "column_header_spec": {
+      "2 - Site information": {
+        "method": "merge",
+        "seperator": " ",
+        "rows": [
+          4,
+          5,
+          6
+        ]
+      },
+      "4 - Stand counts & Phenology": {
+        "method": "merge",
+        "seperator": " ",
+        "rows": [
+          4,
+          5
+        ]
+      },
+      "16.WeedBio & cropData (harvest)": {
+        "method": "merge",
+        "seperator": " ",
+        "rows": [
+          4,
+          5
+        ]
+      }
+    }
+  },
+  "common_methods": [],
+  "translation_map": [
+    {
+      "icasa": "crid",
+      "provider": "user",
+      "fixed_value": "RIC"
+    },
+    {
+      "icasa": "fl_lat",
+      "sheet": "2 - Site information",
+      "provider": "data",
+      "column": "Latitude North (Degree and decimal format only)",
+      "unit": "UO_0000185"
+    },
+    {
+      "icasa": "fL_long",
+      "sheet": "2 - Site information",
+      "provider": "data",
+      "column": "Longitude East (Degree and decimal format only)",
+      "unit": "UO_0000185"
+    },
+    {
+      "icasa": "pdate",
+      "sheet": "3 - Land Prep Operations",
+      "provider": "data",
+      "column": "Date of seeding (dd-mm-yy)",
+      "unit": "AGRO_0000420",
+      "format": "excel"
+    },
+    {
+      "icasa": "hdate",
+      "sheet": "3 - Land Prep Operations",
+      "provider": "data",
+      "column": "Datw of harvest (dd-mm-yy)",
+      "unit": "AGRO_0000417",
+      "format": "excel"
+    },
+    {
+      "icasa": "hwah",
+      "sheet": "16.WeedBio & cropData (harvest)",
+      "provider": "data",
+      "column": "Grain yield (t/ha)",
+      "unit": "TO_0000371"
+    }
+  ]
+}
