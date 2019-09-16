@@ -1,64 +1,175 @@
-[
-  {
-    "data": "GPS Coordinate Latitude",
-    "term": "http://purl.obolibrary.org/obo/OBI_0001620",
-    "unit": "http://purl.obolibrary.org/obo/UO_0000185"
+{
+  "mapping_info": {
+    "mapping_author": "cvillalobos@ufl.edu",
+    "source_url": "https://data.cimmyt.org/dataset.xhtml?persistentId=hdl:11529/11011"
   },
-  {
-    "data": "GPS Coordinate Longitude",
-    "term": "http://purl.obolibrary.org/obo/OBI_0001621",
-    "unit": "http://purl.obolibrary.org/obo/UO_0000185"
-  },
-  {
-    "data": "GPS Coordinate Altitude",
-    "term:": "http://purl.obolibrary.org/obo/PATO_0001687",
-    "unit": "http://purl.obolibrary.org/obo/UO_0000008"
-  },
-  {
-    "data": "Maize variety name = MVnam",
-    "term": "http://www.ebi.ac.uk/efo/EFO_0005136"
-  },
-  {
-    "data": "Planting date = PLNdat",
-    "term": "http://purl.obolibrary.org/obo/AGRO_00000231",
-    "unit": "http://purl.obolibrary.org/obo/AGRO_00000417"
-  },
-  {
-    "data": "Replicate = EXPrep",
-    "term": "http://purl.obolibrary.org/obo/OBI_0200057"
-  },
-  {
-    "data": "Harvest_date = HDATE",
-    "term": "http://purl.obolibrary.org/obo/AGRO_00000025",
-    "unit": "http://purl.obolibrary.org/obo/AGRO_00000417"
-  },
-  {
-    "data": "Grain yield /ha (kg)",
-    "term": "http://purl.obolibrary.org/obo/TO_0000371",
-    "unit": "http://purl.obolibrary.org/obo/UO_0000283"
-  },
-  {
-    "data": "Site no. =EXPsit",
-    "term": "http://purl.obolibrary.org/obo/NCIT_C90472"
-  },
-  {
-    "data": "Plot size (sq. m)",
-    "term": "http://purl.obolibrary.org/obo/AGRO_00000302",
-    "unit": "http://purl.obolibrary.org/obo/UO_0000080"
-  },
-  {
-    "data": "Harvest index (%)",
-    "term": "http://purl.obolibrary.org/obo/TO_0000128",
-    "unit": "http://purl.obolibrary.org/obo/UO_0000187"
-  },
-  {
-    "data": "Tasseling_silking_date=flowering_date = FLWdat",
-    "term": "http://purl.obolibrary.org/obo/PO_0007016",
-    "unit": "http://purl.obolibrary.org/obo/AGRO_00000417"
-  },
-  {
-    "data": "Pysioligic_ maturity_dat = MDAT/date",
-    "term": "http://purl.obolibrary.org/obo/FLOPO_0004906",
-    "unit": "http://purl.obolibrary.org/obo/AGRO_00000417"
-  }
-]
+  "dataset_metadata": {},
+  "ontology_mappings": [
+    {
+      "file": {
+        "file_metadata": {
+          "file_name": "TAMASA_ET_VT_2016F.xlsx",
+          "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "file_url": "https://data.cimmyt.org/api/access/datafile/6138?gbrecs=true"
+        },
+        "sheets": [
+          {
+            "sheet_name": "Corrected Data",
+            "data_start_row": 2,
+            "mappings": [
+              {
+                "column_index": 1,
+                "terms": [
+                  {
+                    "term_url": "http://purl.obolibrary.org/obo/NCIT_C90472"
+                  }
+                ]
+              },
+              {
+                "column_index": 4,
+                "terms": [
+                  {
+                    "term_url": "http://purl.obolibrary.org/obo/OBI_0001620"
+                  }
+                ],
+                "unit_url": "http://purl.obolibrary.org/obo/UO_0000185"
+              },
+              {
+                "column_index": 5,
+                "terms": [
+                  {
+                    "term_url": "http://purl.obolibrary.org/obo/OBI_0001621"
+                  }
+                ],
+                "unit_url": "http://purl.obolibrary.org/obo/UO_0000185"
+              },
+              {
+                "column_index": 6,
+                "terms": [
+                  {
+                    "term_url": "http://purl.obolibrary.org/obo/AGRO_00000367"
+                  }
+                ],
+                "unit_url": "http://purl.obolibrary.org/obo/UO_0000008"
+              },
+              {
+                "column_index": 8,
+                "comment": "Need to specify a new concept of average minimum temperature",
+                "terms": [
+                  {
+                    "term_url": "http://purl.obolibrary.org/obo/ENVO_09200001"
+                  }
+                ],
+                "unit_url": "http://purl.obolibrary.org/obo/UO_0000185"
+              },
+              {
+                "column_index": 9,
+                "comment": "Need to specify a new concept of average maximum temperature",
+                "terms": [
+                  {
+                    "term_url": "http://purl.obolibrary.org/obo/ENVO_09200001"
+                  }
+                ],
+                "unit_url": "http://purl.obolibrary.org/obo/UO_0000185"
+              },
+              {
+                "column_index": 10,
+                "terms": [
+                  {
+                    "term_url": "http://www.ebi.ac.uk/efo/EFO_0005136"
+                  }
+                ]
+              },
+              {
+                "column_index": 11,
+                "terms": [
+                  {
+                    "term_url": "http://purl.obolibrary.org/obo/AGRO_00000142"
+                  }
+                ],
+                "unit_url": "http://purl.obolibrary.org/obo/UO_0000080"
+              },
+              {
+                "column_index": 12,
+                "terms": [
+                  {
+                    "term_url": "http://purl.obolibrary.org/obo/OBI_0200057"
+                  }
+                ]
+              },
+              {
+                "column_index": 14,
+                "terms": [
+                  {
+                    "term_url": "http://purl.obolibrary.org/obo/AGRO_00000302"
+                  }
+                ],
+                "unit_url": "http://purl.obolibrary.org/obo/UO_0000080"
+              },
+              {
+                "column_index": 15,
+                "terms": [
+                  {
+                    "term_url": "http://purl.obolibrary.org/obo/PO_0007015"
+                  }
+                ],
+                "unit_url": "http://purl.obolibrary.org/obo/AGRO_00000417"
+              },
+              {
+                "column_index": 16,
+                "terms": [
+                  {
+                    "term_url": "http://purl.obolibrary.org/obo/PO_0007016"
+                  }
+                ],
+                "unit_url": "http://purl.obolibrary.org/obo/AGRO_00000417"
+              },
+              {
+                "column_index": 17,
+                "terms": [
+                  {
+                    "term_url": "http://purl.obolibrary.org/obo/PO_0007050"
+                  }
+                ],
+                "unit_url": "http://purl.obolibrary.org/obo/AGRO_00000417"
+              },
+              {
+                "column_index": 18,
+                "terms": [
+                  {
+                    "unit_url": "http://purl.obolibrary.org/obo/AGRO_00000025"
+                  }
+                ],
+                "unit_url": "http://purl.obolibrary.org/obo/AGRO_00000417"
+              },
+              {
+                "column_index": 22,
+                "terms": [
+                  {
+                    "term_url": "http://purl.obolibrary.org/obo/TO_0000396"
+                  }
+                ],
+                "unit_url": "http://purl.obolibrary.org/obo/UO_0000283"
+              },
+              {
+                "column_index": 24,
+                "terms": [
+                  {
+                    "term_url": "http://purl.obolibrary.org/obo/TO_0000895"
+                  }
+                ],
+                "unit_url": "http://purl.obolibrary.org/obo/UO_0000187"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "xrefs": [
+    {
+      "xref_provider": "gardian",
+      "xref_url": "https://gardian.bigdata.cgiar.org/dataset.php?id=5cd88b72317da7f1ae0cf390#!/"
+    }
+  ]
+}
