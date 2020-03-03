@@ -24,6 +24,10 @@
             "data_start_row": 2,
             "mappings": [
               {
+                "icasa": "crid",
+                "value": "MAZ"
+              },
+              {
                 "icasa": "plta",
                 "column_index": 14,
                 "unit": "m^2"
@@ -31,12 +35,14 @@
               {
                 "icasa": "fl_lat",
                 "column_index": 4,
-                "unit": "decimal_degrees"
+                "unit": "decimal_degrees",
+                "formula": "fill_with_previous"
               },
               {
                 "icasa": "fl_long",
                 "column_index": 5,
-                "unit": "decimal_degrees"
+                "unit": "decimal_degrees",
+                "formula": "fill_with_previous"
               },
               {
                 "icasa": "adat",
@@ -48,17 +54,18 @@
                 "column_index": 10
               },
               {
-                "icasa": "edate",
+                "icasa": "pldae",
                 "column_index": 15,
                 "unit": "date"
               },
               {
                 "icasa": "flele",
                 "column_index": 6,
-                "unit": "m"
+                "unit": "m",
+                "formula": "fill_with_previous"
               },
               {
-                "icasa": "hadat",
+                "icasa": "hdate",
                 "column_index": 18,
                 "unit": "date"
               },
@@ -70,7 +77,7 @@
               {
                 "icasa": "hwam",
                 "column_index": 22,
-                "unit": "kg"
+                "unit": "kg/ha"
               },
               {
                 "icasa": "mdat",
