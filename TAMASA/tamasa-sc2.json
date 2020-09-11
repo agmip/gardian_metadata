@@ -1,116 +1,133 @@
-{
+﻿{
   "mapping_info": {
     "mapping_author": "cvillalobos@ufl.edu",
     "source_url": "https://data.cimmyt.org/dataset.xhtml?persistentId=hdl:11529/11011"
   },
   "dataset_metadata": {},
-  "agmip_translation_mapping": {
-    "relations": [],
+  "agmip_translation_mappings": {
     "primary_ex_sheet": {
-      "file": "",
-      "sheet": "",
-      "comment": "Grab the primary keys from here if EXNAME is not defined"
+      "file": null,
+      "sheet": null
     },
+    "relations": [],
     "files": [
       {
-        "file_metadata": {
-          "file_name": "TAMASA_ET_VT_2016F.xlsx",
-          "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-          "file_url": "https://data.cimmyt.org/api/access/datafile/6138?gbrecs=true"
-        },
-        "sheets": [
-          {
-            "sheet_name": "Corrected Data",
-            "data_start_row": 2,
-            "mappings": [
-              {
-                "icasa": "crid",
-                "value": "MAZ"
-              },
-              {
-                "icasa": "plta",
-                "column_index": 14,
-                "unit": "m^2"
-              },
-              {
-                "icasa": "fl_lat",
-                "column_index": 4,
-                "unit": "decimal_degrees",
-                "formula": "fill_with_previous"
-              },
-              {
-                "icasa": "fl_long",
-                "column_index": 5,
-                "unit": "decimal_degrees",
-                "formula": "fill_with_previous"
-              },
-              {
-                "icasa": "adat",
-                "column_index": 16,
-                "unit": "date"
-              },
-              {
-                "icasa": "cul_name",
-                "column_index": 10
-              },
-              {
-                "icasa": "pldae",
-                "column_index": 15,
-                "unit": "date"
-              },
-              {
-                "icasa": "flele",
-                "column_index": 6,
-                "unit": "m",
-                "formula": "fill_with_previous"
-              },
-              {
-                "icasa": "hdate",
-                "column_index": 18,
-                "unit": "date"
-              },
-              {
-                "icasa": "hiad",
-                "column_index": 24,
-                "unit": "percent"
-              },
-              {
-                "icasa": "hwam",
-                "column_index": 22,
-                "unit": "kg/ha"
-              },
-              {
-                "icasa": "mdat",
-                "column_index": 17,
-                "unit": "date"
-              },
-              {
-                "icasa": "pdate",
-                "column_index": 11,
-                "unit": "date"
-              },
-              {
-                "icasa": "rp",
-                "column_index": 12,
-                "unit": "count"
-              },
-              {
-                "icasa": "tmaxa",
-                "column_index": 9,
-                "unit": "degree_C"
-              },
-              {
-                "icasa": "tmina",
-                "column_index": 8,
-                "unit": "degree_C"
-              },
-              {
-                "icasa": "site_name",
-                "column_index": 1
-              }
-            ]
-          }
-        ]
+        "file": {
+          "file_metadata": {
+            "file_name": "TAMASA_ET_VT_2016F.xlsx",
+          	"content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          	"file_url": "https://data.cimmyt.org/api/access/datafile/6138?gbrecs=true"
+          },
+          "sheets": [
+            {
+              "file_name": "TAMASA_ET_VT_2016F - Copy.xlsx",
+              "sheet_name": "Corrected Data",
+              "single_flg": false,
+              "mappings": [
+                {
+                  "icasa": "site_name",
+                  "column_index": 1,
+                  "column_header": "Site no. = EXPsit",
+                  "unit_error": true
+                },
+                {
+                  "icasa": "fl_lat",
+                  "column_index": 4,
+                  "unit": "decimal_degrees",
+                  "column_header": "GPS Coordinate Latitude"
+                },
+                {
+                  "icasa": "fl_long",
+                  "column_index": 5,
+                  "unit": "decimal_degrees",
+                  "column_header": "GPS Coordinate Longitude"
+                },
+                {
+                  "icasa": "flele",
+                  "column_index": 6,
+                  "unit": "m",
+                  "column_header": "GPS Coordinate Altitude"
+                },
+                {
+                  "icasa": "tmina",
+                  "column_index": 8,
+                  "unit": "degree_C",
+                  "column_header": "Temperature Average Minimum = AVMINTemp"
+                },
+                {
+                  "icasa": "tmaxa",
+                  "column_index": 9,
+                  "unit": "degree_C",
+                  "column_header": "Temperature Average Maximum = AVMAXTemp"
+                },
+                {
+                  "icasa": "cul_name",
+                  "column_index": 10,
+                  "column_header": "Maize variety name = MVnam",
+                  "unit_error": true
+                },
+                {
+                  "icasa": "pdate",
+                  "column_index": 11,
+                  "unit": "date",
+                  "column_header": "Planting date = PLNdat"
+                },
+                {
+                  "icasa": "rp",
+                  "column_index": 12,
+                  "unit": "count",
+                  "column_header": "Replicate = EXPrep"
+                },
+                {
+                  "icasa": "plta",
+                  "column_index": 14,
+                  "unit": "m^2",
+                  "column_header": "Plot size (sq. m)"
+                },
+                {
+                  "icasa": "edate",
+                  "column_index": 15,
+                  "unit": "date",
+                  "column_header": "Emergence date = EMdat"
+                },
+                {
+                  "icasa": "adat",
+                  "column_index": 16,
+                  "unit": "date",
+                  "column_header": "Tasseling_silking_date=flowering_date = FLWdat"
+                },
+                {
+                  "icasa": "mdat",
+                  "column_index": 17,
+                  "unit": "date",
+                  "column_header": "Pysioligic_ maturity_dat = MDAT/date"
+                },
+                {
+                  "icasa": "hadat",
+                  "column_index": 18,
+                  "unit": "date",
+                  "column_header": "Harvest_date = HDATE"
+                },
+                {
+                  "icasa": "hwam",
+                  "column_index": 22,
+                  "unit": "kg",
+                  "column_header": "Grain yield /ha (kg)"
+                },
+                {
+                  "icasa": "hiad",
+                  "column_index": 24,
+                  "unit": "percent",
+                  "column_header": "Harvest index (%)"
+                }
+              ],
+              "header_row": 1,
+              "data_start_row": 2,
+              "file_def": "TAMASA_ET_VT_2016F - Copy.xlsx",
+              "sheet_def": "Corrected Data"
+            }
+          ]
+        }
       }
     ]
   },
