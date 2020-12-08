@@ -1,6 +1,6 @@
 {
   "mapping_info": {
-    "vmapper_version": "1.0.4-SNAPSHOT",
+    "vmapper_version": "1.0.3",
     "mapping_author": "cvillalobos@ufl.edu",
     "source_url": "https://data.cimmyt.org/dataset.xhtml?persistentId=hdl:11529/11011"
   },
@@ -104,19 +104,19 @@
                   "column_header": "Pysioligic_ maturity_dat = MDAT/date"
                 },
                 {
-                  "icasa": "hadat",
+                  "icasa": "hdate",
                   "column_index": 18,
                   "unit": "date",
                   "column_header": "Harvest_date = HDATE"
                 },
                 {
-                  "icasa": "hwam",
+                  "icasa": "hwah",
                   "column_index": 22,
                   "unit": "kg/ha",
                   "column_header": "Grain yield /ha (kg)"
                 },
                 {
-                  "icasa": "hiad",
+                  "icasa": "hiam",
                   "column_index": 24,
                   "unit": "percent",
                   "column_header": "Harvest index (%)"
