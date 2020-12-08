@@ -1,19 +1,23 @@
-﻿{
+{
   "mapping_info": {
-    "vmapper_version": "1.0.3",
+    "vmapper_version": "1.0.4-SNAPSHOT",
     "mapping_author": "cvillalobos@ufl.edu",
     "source_url": "https://data.cimmyt.org/dataset.xhtml?persistentId=hdl:11529/11011"
   },
   "dataset_metadata": {},
   "agmip_translation_mappings": {
+    "primary_ex_sheet": {
+      "file": null,
+      "sheet": null
+    },
     "relations": [],
     "files": [
       {
         "file": {
           "file_metadata": {
             "file_name": "TAMASA_ET_VT_2016F.xlsx",
-            "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-            "file_url": "https://data.cimmyt.org/api/access/datafile/6138?gbrecs=true"
+          	"content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          	"file_url": "https://data.cimmyt.org/api/access/datafile/6138?gbrecs=true"
           },
           "sheets": [
             {
@@ -22,116 +26,100 @@
               "single_flg": false,
               "mappings": [
                 {
-                  "icasa": "SITE_NAME",
+                  "icasa": "site_name",
                   "column_index": 1,
                   "column_header": "Site no. = EXPsit",
-                  "unit": "text",
-                  "description": "Name of site for experiment"
+                  "unit": "text"
                 },
                 {
-                  "icasa": "FL_LAT",
+                  "icasa": "fl_lat",
                   "column_index": 4,
                   "unit": "decimal_degrees",
-                  "column_header": "GPS Coordinate Latitude",
-                  "description": "Field latitude"
+                  "column_header": "GPS Coordinate Latitude"
                 },
                 {
-                  "icasa": "FL_LONG",
+                  "icasa": "fl_long",
                   "column_index": 5,
                   "unit": "decimal_degrees",
-                  "column_header": "GPS Coordinate Longitude",
-                  "description": "Field longitude, E positive, W negative"
+                  "column_header": "GPS Coordinate Longitude"
                 },
                 {
-                  "icasa": "FLELE",
+                  "icasa": "flele",
                   "column_index": 6,
                   "unit": "m",
-                  "column_header": "GPS Coordinate Altitude",
-                  "description": "Elevation of field site"
+                  "column_header": "GPS Coordinate Altitude"
                 },
                 {
+                  "icasa": "tmina",
                   "column_index": 8,
                   "unit": "degree_C",
-                  "column_header": "Temperature Average Minimum = AVMINTemp",
-                  "icasa": "TMINA",
-                  "description": "Minimum daily air temperature, average, sowing to harvest"
+                  "column_header": "Temperature Average Minimum = AVMINTemp"
                 },
                 {
-                  "icasa": "TMAXA",
+                  "icasa": "tmaxa",
                   "column_index": 9,
                   "unit": "degree_C",
-                  "column_header": "Temperature Average Maximum = AVMAXTemp",
-                  "description": "Maximum daily air temperature, average, sowing to harvest"
+                  "column_header": "Temperature Average Maximum = AVMAXTemp"
                 },
                 {
-                  "icasa": "CUL_NAME",
+                  "icasa": "cul_name",
                   "column_index": 10,
                   "column_header": "Maize variety name = MVnam",
-                  "unit": "text",
-                  "description": "Cultivar name"
+                  "unit": "text"
                 },
                 {
-                  "icasa": "PDATE",
+                  "icasa": "pdate",
                   "column_index": 11,
                   "unit": "date",
-                  "column_header": "Planting date = PLNdat",
-                  "description": "Planting or sowing date"
+                  "column_header": "Planting date = PLNdat"
                 },
                 {
-                  "icasa": "RP",
+                  "icasa": "rp",
                   "column_index": 12,
-                  "unit": "number",
-                  "column_header": "Replicate = EXPrep",
-                  "description": "Replicate number"
+                  "unit": "count",
+                  "column_header": "Replicate = EXPrep"
                 },
                 {
-                  "icasa": "PLTA",
+                  "icasa": "plta",
                   "column_index": 14,
                   "unit": "m^2",
-                  "column_header": "Plot size (sq. m)",
-                  "description": "Plot area (gross) per rep"
+                  "column_header": "Plot size (sq. m)"
                 },
                 {
-                  "icasa": "EDATE",
+                  "icasa": "edate",
                   "column_index": 15,
                   "unit": "date",
-                  "column_header": "Emergence date = EMdat",
-                  "description": "Date of emergence"
+                  "column_header": "Emergence date = EMdat"
                 },
                 {
-                  "icasa": "ADAT",
+                  "icasa": "adat",
                   "column_index": 16,
                   "unit": "date",
-                  "column_header": "Tasseling_silking_date=flowering_date = FLWdat",
-                  "description": "Growth stage date, anthesis"
+                  "column_header": "Tasseling_silking_date=flowering_date = FLWdat"
                 },
                 {
-                  "icasa": "MDAT",
+                  "icasa": "mdat",
                   "column_index": 17,
                   "unit": "date",
-                  "column_header": "Pysioligic_ maturity_dat = MDAT/date",
-                  "description": "Growth stage of physiol. maturity, as date"
+                  "column_header": "Pysioligic_ maturity_dat = MDAT/date"
                 },
                 {
-                  "icasa": "HDATE",
+                  "icasa": "hadat",
                   "column_index": 18,
                   "unit": "date",
-                  "column_header": "Harvest_date = HDATE",
-                  "description": "Growth stage date, harvest"
+                  "column_header": "Harvest_date = HDATE"
                 },
                 {
-                  "icasa": "HWAH",
+                  "icasa": "hwam",
                   "column_index": 22,
                   "unit": "kg/ha",
-                  "column_header": "Grain yield /ha (kg)",
-                  "description": "Harvested yield at harvest (dry wt)"
+                  "column_header": "Grain yield /ha (kg)"
                 },
                 {
-                  "icasa": "HIAM",
+                  "icasa": "hiad",
                   "column_index": 24,
                   "unit": "percent",
-                  "column_header": "Harvest index (%)",
-                  "description": "Harvest index at maturity"
+                  "column_header": "Harvest index (%)"
                 }
               ],
               "header_row": 1,
